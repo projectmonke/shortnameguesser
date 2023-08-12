@@ -17,7 +17,7 @@ def predict_long_names(shortname: str):
             },
             {
                 "role": "user",
-                "content": f"Make a list of guesses, for what the rest of the word could be from this snippet. Ensure that the snippet is a substring of your guess. Make as many guesses as you can. Snippet: {shortname}"
+                "content": f"Make a list of guesses, for what the rest of the word could be from this snippet. Ensure that the snippet is a substring of your guess. Make {sys.argv[1]} guesses. Snippet: {shortname}"
             },
         ],
     )
